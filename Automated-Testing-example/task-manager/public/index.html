@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task Manager</title>
+  <style>
+    body { font-family: system-ui, Arial; padding: 20px; max-width: 800px; margin: auto }
+    input, textarea { width: 100%; padding: 8px; margin: 6px 0 }
+    .task { border: 1px solid #ddd; padding: 8px; margin: 6px 0; display:flex; justify-content:space-between }
+    .task .meta { max-width: 75% }
+    button { margin-left: 8px }
+  </style>
+</head>
+<body>
+  <h1>Task Manager</h1>
+
+  <form id="taskForm">
+    <input id="title" placeholder="Task title" required />
+    <textarea id="description" placeholder="Description (optional)"></textarea>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <h2>Tasks</h2>
+  <div id="tasks"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
